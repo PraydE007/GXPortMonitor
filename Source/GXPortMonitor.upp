@@ -1,0 +1,16 @@
+uses
+	CtrlLib;
+
+file
+	GXPortMonitor.h,
+	GXPortMonitor.cpp,
+	main.cpp,
+	GXPortMonitor.lay;
+
+mainconfig
+	"" = "GUI";
+
+custom() "",
+	"",
+	"";
+
