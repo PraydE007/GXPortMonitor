@@ -1,7 +1,8 @@
-LAYOUT(GXPortMonitorLayout, 224, 200)
-	ITEM(LineEdit, pidEdit, SetFont(MonospaceZ(12).Bold()).Tip(t_("PID")).LeftPosZ(40, 104).TopPosZ(8, 19))
-	ITEM(Label, dv___1, SetLabel(t_("PID:")).SetAlign(ALIGN_CENTER).LeftPosZ(8, 32).TopPosZ(8, 19))
-	ITEM(Button, refreshBtn, SetLabel(t_("Refresh")).LeftPosZ(152, 60).TopPosZ(8, 20))
-	ITEM(ArrayCtrl, array, LeftPosZ(8, 208).TopPosZ(32, 164))
+LAYOUT(GXPortMonitorLayout, 224, 236)
+	ITEM(LineEdit, pidEdit, SetFont(MonospaceZ(12).Bold()).Tip(t_("PID")).LeftPosZ(40, 104).TopPosZ(28, 19))
+	ITEM(Label, dv___1, SetLabel(t_("PID:")).SetAlign(ALIGN_CENTER).LeftPosZ(8, 32).TopPosZ(28, 19))
+	ITEM(Button, refreshBtn, SetLabel(t_("Refresh")).LeftPosZ(148, 60).TopPosZ(28, 20))
+	ITEM(ArrayCtrl, array, LeftPosZ(8, 208).TopPosZ(52, 180))
+	ITEM(Option, regexBox, SetLabel(t_("NETSTAT.EXE and RegEx parse")).LeftPosZ(12, 196).TopPosZ(8, 16))
 END_LAYOUT
 

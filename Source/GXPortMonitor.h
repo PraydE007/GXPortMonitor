@@ -2,9 +2,15 @@
 #define _GXPortMonitor_GXPortMonitor_h
 
 #include <CtrlLib/CtrlLib.h>
-#include <iphlpapi.h>
+// #include <plugin/pcre/Pcre.h>
 
+#include <iphlpapi.h>
+#include <iostream>
+#include <stdexcept>
+#include <stdio.h>
 #include <string>
+#include <regex>
+#include <vector>
 
 using namespace Upp;
 using namespace std;
@@ -18,7 +24,13 @@ public:
     GXPortMonitor();
 
 private:
+    struct ConnectLine {
+        string addr;
+        DWORD pid;
+    };
+
     void onRefresh();
+    void refreshListRegex(DWORD dwScanPid);
     void refreshList(DWORD dwScanPid);
 
     string getIp(DWORD ip);
