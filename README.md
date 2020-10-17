@@ -23,5 +23,5 @@ Writed by using [U++](https://www.ultimatepp.org) library and Win32 IP Helper ([
 
 * **Andrii Bondarenko** - [PraydE](https://github.com/PraydE007)
 
-![](scrn1.png)
-![](scrn2.png)
+![](scrn1.PNG)
+![](scrn2.PNG)
